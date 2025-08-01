@@ -136,6 +136,10 @@ export const getParamPerNetwork = <T>(
   { kovan, ropsten, main, buidlerevm, coverage, tenderlyMain }: iParamsPerNetwork<T>,
   network: eEthereumNetwork
 ) => {
+  // Map buidlerevm_docker to buidlerevm
+  if ((network as string) === 'buidlerevm_docker') {
+    network = eEthereumNetwork.buidlerevm;
+  }
   const MAINNET_FORK = process.env.MAINNET_FORK === 'true';
   if (MAINNET_FORK) {
     return main;
