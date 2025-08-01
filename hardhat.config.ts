@@ -126,7 +126,7 @@ const buidlerConfig: HardhatUserConfig = {
       chainId: BUIDLEREVM_CHAINID,
       throwOnTransactionFailures: true,
       throwOnCallFailures: true,
-      url: 'http://localhost:8545',
+      url: 'http://127.0.0.1:8545',
     },
     ganache: {
       url: 'http://ganache:8545',
