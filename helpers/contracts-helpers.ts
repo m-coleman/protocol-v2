@@ -158,6 +158,7 @@ export const getParamPerNetwork = <T>(param: iParamsPerNetwork<T>, network: eNet
     case eEthereumNetwork.coverage:
       return coverage;
     case eEthereumNetwork.buidlerevm:
+    case eEthereumNetwork.buidlerevm_docker:
       return buidlerevm;
     case eEthereumNetwork.hardhat:
       return buidlerevm;

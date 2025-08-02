@@ -8,6 +8,7 @@ export type eNetwork = eEthereumNetwork | ePolygonNetwork | eXDaiNetwork | eAval
 
 export enum eEthereumNetwork {
   buidlerevm = 'buidlerevm',
+  buidlerevm_docker = 'buidlerevm_docker',
   kovan = 'kovan',
   ropsten = 'ropsten',
   main = 'main',
